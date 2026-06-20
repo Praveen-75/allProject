@@ -1,0 +1,386 @@
+* {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+}
+
+body,
+html {
+     height: 100%;
+     width: 100%;
+}
+
+@media(max-width:550px) {
+     .main {
+          min-height: 100vw;
+          width: 100%;
+     }
+
+     .nav {
+          height: 15vw;
+          width: 100%;
+          /* background-color: #fff; */
+     }
+
+     .left {
+          height: 100%;
+          font-size: 8vw;
+          width: 50%;
+     }
+
+     .mid {
+          display: none;
+     }
+
+     .right {
+          height: 100%;
+          width: 50%;
+     }
+
+     .part1 {
+          margin-top: 10%;
+          position: relative;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          min-height: 100vw;
+          width: 100%;
+          /* background-color: #fff; */
+     }
+
+     .pright {
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 100vw;
+          width: 100%;
+     }
+
+     .circle,
+     .maincircle {
+          display: none;
+          height: 2.5vw;
+          width: 20vw;
+          background-color: rgb(237, 9, 207);
+          border-radius: 50%;
+          /* margin-bottom: 1vw; */
+          z-index: 9999;
+     }
+
+     .circle1 {
+          display: none;
+          height: 4vw;
+          width: 40vw;
+          background-color: blueviolet;
+          border-radius: 50%;
+          top: 88vw;
+          position: absolute;
+          z-index: 9;
+     }
+
+     .circle2 {
+          display: none;
+          top: 90vw;
+          position: absolute;
+          height: 6vw;
+          width: 60vw;
+          background-color: blue;
+          border-radius: 50%;
+     }
+
+     .pleft {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          height: 100vw;
+          width: 80%;
+          position: absolute;
+          top: 100%;
+     }
+
+     .pleft h3 {
+          line-height: 10vw;
+          font-size: 10vw;
+     }
+
+     .pleft p {
+          font-size: 4vw;
+     }
+
+     .pleft span {
+          margin-top: 5vw;
+          font-size: 4vw;
+          height: 12vw;
+          width: 45vw;
+     }
+
+     .part2 {
+          height: 100vw;
+          width: 100%;
+          margin-top: 100%;
+     }
+
+     .p2mid {
+          height: 100vh;
+     }
+
+     .p2mid h1 {
+          font-size: 8vw;
+     }
+
+     .p2mid p {
+          font-size: 4vw;
+          line-height: 8vw;
+     }
+
+     .part3 {
+          margin-top: 30%;
+          height: 100%;
+          width: 100%;
+     }
+
+     .part4 {
+          height: 100%;
+          width: 100%;
+     }
+
+     .p4top {
+          height: 100%;
+          width: 100%;
+     }
+
+     .p4top h1 {
+          font-size: 8vw;
+     }
+
+     .p4top h3 {
+          font-weight: 100;
+          padding-left: 10%;
+          line-height: 6vw;
+          font-size: 4vw;
+          padding-bottom: 10%;
+     }
+
+     .slid {
+          height: 100%;
+          width: 100%;
+          display: flex;
+          gap: 20vw;
+     }
+
+     .photo {
+          height: 100%;
+          width: 100%;
+          padding-bottom: 10%;
+     }
+
+     .photo img {
+          height: 40vw;
+          width: 40vw;
+          border-radius: 5vw;
+     }
+
+     .photo h1 {
+          padding-top: 15%;
+          font-weight: 100;
+          font-size: 4vw;
+     }
+
+     .photo p {
+          font-size: 4vw;
+     }
+
+     .part5 {
+          position: relative;
+          height: 100vh;
+          width: 100%;
+     }
+
+     .part5 h1 {
+          font-size: 7vw;
+     }
+
+     .part5 p {
+          font-size: 4.5vw;
+     }
+
+     #p1 {
+          position: absolute;
+          height: 100%;
+          width: 30%;
+     }
+
+     #p2 {
+          position: absolute;
+          height: 100%;
+          width: 30%;
+          right: 0;
+     }
+
+     #p1 h1,
+     #p2 h1 {
+          font-size: 10vw;
+     }
+
+     .line {
+          height: 50%;
+          width: 3%;
+          border-radius: 5%;
+     }
+
+     .p5left {
+          left: 100vh;
+          width: 100%;
+          height: 100%;
+          padding-bottom: 20%;
+     }
+
+     .p5left h1 {
+          font-size: 7vw;
+     }
+
+     .p5left h3 {
+          font-size: 5vw;
+     }
+
+     .p5left p {
+          font-size: 3vw;
+          line-height: 5vw;
+     }
+
+     .p5right {
+          width: 100%;
+          height: 100%;
+          padding-bottom: 20%;
+     }
+
+     .p5right h1 {
+          font-size: 7vw;
+     }
+
+     .p5right h3 {
+          font-size: 3.5vw;
+     }
+
+     .p5right p {
+          font-size: 3vw;
+          line-height: 5vw;
+     }
+
+     .part6 {
+          margin-top: 80vh;
+     }
+
+     .part6 {
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+     }
+
+     .p6left {
+          width: 100%;
+     }
+
+     .p6left h3 {
+          font-size: 4vw;
+          padding-bottom: 4vw;
+     }
+
+     .p6left h1 {
+          font-size: 6vw;
+          line-height: 10vw;
+     }
+
+     .p6left p {
+          font-size: 4vw;
+          line-height: 7vw;
+          padding-bottom: 5vw;
+     }
+
+     .p6left p>i {
+          font-size: 6vw;
+     }
+
+     .p6left small {
+          font-size: 4vw;
+          height: 15vw;
+          width: 60vw;
+     }
+
+     .p6right {
+          display: flex;
+          align-items: center;
+          padding-left: 20%;
+          justify-content: center;
+          width: 100%;
+     }
+
+     .p6right img {
+          height: 100%;
+          width: 100%;
+     }
+
+     .part7 {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          height: 100%;
+          width: 100%;
+          margin-bottom: 10%;
+     }
+
+     .p7right {
+          display: flex;
+          flex-direction: column;
+          padding-left: 10%;
+          justify-content: center;
+          width: 100%;
+     }
+
+     .p7left img {
+          height: 100%;
+          width: 100%;
+     }
+
+     .p7right h3 {
+          font-size: 4vw;
+          padding-bottom: 4vw;
+     }
+
+     .p7right h1 {
+          font-size: 6vw;
+          line-height: 10vw;
+     }
+
+     .p7right p {
+          font-size: 4vw;
+          line-height: 7vw;
+          padding-bottom: 5vw;
+     }
+
+     .p7right p>i {
+          font-size: 6vw;
+     }
+
+     .part8 {
+          height: 100vw;
+          width: 100%;
+     }
+
+     .part8 #p8 {
+          font-size: 6vw;
+          padding-top: 8%;
+     }
+
+     .part8 #p88 {
+          padding-top: 10%;
+          font-size: 4vw;
+          padding-left: 10%;
+     }
+}

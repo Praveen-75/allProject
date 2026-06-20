@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="Auth.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+          integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+          crossorigin="anonymous" />
+
+     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+
+     <title>GIF Search uisng GIPHY API</title>
+</head>
+
+<body>
+
+     <div class="result">
+          <span class="loader"></span>
+     </div>
+
+
+
+     <div class="login">
+          <div class="navbar navbar-default">
+               <i id="close" class="ri-close-circle-line"></i>
+               <div class="navbar-header">
+                    <button id="btn" type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                         data-target=".navbar-collapse" aria-expanded="false" aria-controls="navbar">
+                         <span class="sr-only">Toggle navigation</span>
+                         <span class="icon-bar"></span>
+                         <span class="icon-bar"></span>
+                         <span class="icon-bar"></span>
+                    </button>
+               </div>
+               <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                         <li><a href="#" id="logout" style="display: none;">Log Out</a></li>
+                    </ul>
+               </div>
+          </div>
+          
+          <br>
+          <div class="container">
+               <form name="registration_form" id="registration_form" method="post" action="#"
+                    enctype="multipart/form-data">
+                    <div class="row">
+
+                         <div class="col-sm-4">
+                              <div class="form-group">
+                                   <label for="email">Email</label>
+                                   <input type="text" name="email" id="email" class="form-control"
+                                        placeholder="Enter your email">
+                              </div>
+
+                              <div class="form-group">
+                                   <label for="password">Password</label>
+                                   <input type="password" name="password" id="password" class="form-control"
+                                        placeholder="Enter your password">
+                              </div>
+                              <button type="button" id="register" name="register" style="background-color: transparent; color: blue; border: none;">Register
+                                   Now</button>
+                         </div>
+               </form>
+               <div class="col-sm-4">
+                    <div class="gap"></div>
+               </div>
+               <form name="login_form" id="login_form" method="post" action="#" enctype="multipart/form-data">
+                    <div class="col-sm-4">
+                         <div class="form-group">
+                              <label for="email">Email</label>
+                              <input type="text" name="login_email" id="login_email" class="form-control"
+                                   placeholder="Enter your email">
+                         </div>
+
+                         <div class="form-group">
+                              <label for="password">Password</label>
+                              <input type="password" name="login_password" id="login_password" class="form-control"
+                                   placeholder="Enter your password">
+                         </div>
+                         <button type="button" id="login" name="login" style="background-color: transparent; color: blue;  border: none;">Login</button>
+                    </div>
+          </div>
+          </form>
+     </div>
+     </div>
+
+
+     <div class="main">
+          <header className='header'>
+               <h1 className='header__heading'>
+                    <span className='header__logo'></span> <span>GIF Search API</span>
+               </h1>
+          </header>
+
+          <div class="search">
+               <i id="menu" class="ri-account-circle-line"></i>
+               <i class="fas fa-search"></i>
+               <input type="text" class="input userinput" placeholder="Search...">
+               <button class="btn searchBtn">
+                    <h3>Search</h3>
+               </button>
+          </div>
+
+          <div class="container gif-results"></div>
+          <div id="giphy-search"></div>
+     </div>
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+     </script>
+     <script src="index.js"></script>
+
+     <script type="module">
+          import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
+          import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-analytics.js";
+          import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js";
+          const firebaseConfig = {
+               apiKey: "AIzaSyA4U-yroG46dr1zfvVJZU700XaMbb9LGYU",
+               authDomain: "webauth-54153.firebaseapp.com",
+               projectId: "webauth-54153",
+               storageBucket: "webauth-54153.appspot.com",
+               messagingSenderId: "353759006140",
+               appId: "1:353759006140:web:396a7e29601a801a046fb9",
+               measurementId: "G-9HZ6EK6RZY"
+          };
+          const app = initializeApp(firebaseConfig);
+          const analytics = getAnalytics(app);
+          const auth = getAuth();
+          console.log(app);
+
+          document.getElementById("register").addEventListener("click", function () {
+               var email = document.getElementById("email").value;
+               var password = document.getElementById("password").value;
+
+               createUserWithEmailAndPassword(auth, email, password)
+                    .then((userCredential) => {
+                         const user = userCredential.user;
+                         console.log(user);
+                         alert("Registration successfully!!");
+                    })
+                    .catch((error) => {
+                         const errorCode = error.code;
+                         const errorMessage = error.message;
+                         console.log(errorMessage);
+                         alert(error);
+                    });
+          });
+
+          document.getElementById("login").addEventListener("click", function () {
+               var email = document.getElementById("login_email").value;
+               var password = document.getElementById("login_password").value;
+
+               signInWithEmailAndPassword(auth, email, password)
+                    .then((userCredential) => {
+                         const user = userCredential.user;
+                         console.log(user);
+                         alert(user.email + " Login successfully!!!");
+                         document.getElementById('logout').style.display = 'block';
+                    })
+                    .catch((error) => {
+                         const errorCode = error.code;
+                         const errorMessage = error.message;
+                         console.log(errorMessage);
+                         alert(errorMessage);
+                    });
+          });
+
+          document.getElementById("logout").addEventListener("click", function () {
+               signOut(auth).then(() => {
+                    console.log('Sign-out successful.');
+                    alert('Sign-out successful.');
+                    document.getElementById('logout').style.display = 'none';
+               }).catch((error) => {
+                    console.log('An error happened.');
+               });
+          });
+
+     </script>
+</body>
+
+</html>

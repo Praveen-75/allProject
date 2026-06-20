@@ -1,0 +1,422 @@
+* {
+     margin: 0;
+     padding: 0;
+}
+
+body,
+html {
+     height: 100%;
+     width: 100%;
+}
+
+.box {
+     position: relative;
+     width: 800px;
+     height: 730px;
+     background-image: url();
+     /* border: 10px solid black; */
+     touch-action: manipulation;
+}
+
+/* body{
+     touch-action: manipulation;
+ } */
+.obox {
+     position: absolute;
+     top: 50%;
+     /* left: 50%; */
+     transform: translate(-50%, -50%);
+     display: none;
+     /* flex-direction: column; */
+     align-items: center;
+     justify-content: center;
+     gap: 2vw;
+}
+
+td {
+     width: 50px;
+     height: 50px;
+     /* position: absolute; */
+     background-color: whitesmoke;
+     border: 0.5px solid green;
+     margin: 0%;
+}
+
+.red {
+     width: 260px;
+     height: 260px;
+     border: 40px solid red;
+}
+
+.rk1,
+.rk2,
+.rk3,
+.rk4 {
+     width: 50px;
+     height: 50px;
+     background-color: red;
+     margin: 34px;
+     display: inline-block;
+
+}
+
+.m {
+     background-color: green;
+}
+
+.blue {
+     width: 260px;
+     height: 260px;
+     border: 37px solid blue;
+}
+
+.bk1,
+.bk2,
+.bk3,
+.bk4 {
+     width: 50px;
+     height: 50px;
+     background-color: blue;
+     margin: 34px;
+     display: inline-block;
+}
+
+.green {
+     width: 260px;
+     height: 260px;
+     border: 40px solid green;
+}
+
+.gk1,
+.gk2,
+.gk3,
+.gk4 {
+     width: 50px;
+     height: 50px;
+     background-color: green;
+     margin: 34px;
+     display: inline-block;
+}
+
+.yellow {
+     width: 260px;
+     height: 260px;
+     border: 37px solid yellow;
+}
+
+.yk1,
+.yk2,
+.yk3,
+.yk4 {
+     width: 50px;
+     height: 50px;
+     background-color: yellow;
+     margin: 34px;
+     display: inline-block;
+}
+
+.b_1,
+.b_2,
+.b_3 {
+     display: flex;
+}
+
+.gt,
+.gt1,
+.ty {
+     display: flex;
+}
+
+.center {
+     height: 150px;
+     width: 150px;
+     /* display: flex; */
+     background-image: url(ludoImg/ab.png);
+     background-size: 150px;
+     border: 3px solid violet;
+}
+
+.b_2 {
+     display: flex;
+     justify-content: space-evenly;
+}
+
+.y {
+     background-color: yellow;
+}
+
+.r {
+     background-color: red;
+}
+
+.b {
+     background-color: blue;
+}
+
+.dicy {
+     width: 100px;
+     height: 100px;
+     background-color: blanchedalmond;
+     background-image: url("ludoImg/1.png");
+     background-size: cover;
+     cursor: pointer;
+     transition: all 0.2s ease-in-out;
+     border-color: white;
+     border-radius: 20%;
+}
+
+.dice {
+     width: 140px;
+     margin-top: 6.7vw;
+     height: 830px;
+     /* border: 10px solid black; */
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     overflow: hidden;
+}
+
+.dicy:active {
+     transform: rotate(180deg);
+}
+
+p {
+     text-align: center;
+     font-size: 30px;
+}
+
+a {
+     text-decoration: none;
+}
+
+.bp {
+     width: 30px;
+     height: 30px;
+     position: absolute;
+     z-index: 3;
+     border-radius: 50%;
+     background-color: skyblue;
+     border: 1px solid black;
+     margin: 8px;
+}
+
+.yp {
+     width: 30px;
+     height: 30px;
+     position: absolute;
+     z-index: 4;
+     border-radius: 50%;
+     background-color: orange;
+     border: 1px solid black;
+     margin: 8px;
+}
+
+.rp {
+     width: 30px;
+     height: 30px;
+     position: absolute;
+     z-index: 1;
+     border-radius: 50%;
+     background-color: brown;
+     border: 1px solid black;
+     margin: 8px;
+}
+
+.gp {
+     width: 30px;
+     height: 30px;
+     position: absolute;
+     z-index: 2;
+     border-radius: 50%;
+     background-color: lightgreen;
+     border: 1px solid black;
+     margin: 8px;
+}
+
+#rr6 {
+     width: 40px;
+     height: 40px;
+     margin-top: 52px;
+     /* border:2px solid black; */
+}
+
+#gr6 {
+     width: 40px;
+     height: 40px;
+     margin-left: 50px;
+     margin-top: -93px;
+     /* border:2px solid black; */
+}
+
+#yr6 {
+     width: 40px;
+     height: 40px;
+     margin-left: 50px;
+     margin-top: 8px;
+     /* border:2px solid black; */
+}
+
+#br6 {
+     width: 40px;
+     height: 40px;
+     margin-left: 102px;
+     margin-top: 9px;
+     /* border:2px solid black; */
+}
+
+#c0,
+#c13,
+#c47,
+#c34,
+#c39,
+#c26,
+#c21,
+#c8 {
+     background-image: url("ludoImg/s.svg");
+     background-size: 50px;
+     overflow: hidden;
+}
+
+.ins {
+     display: flex;
+     border: 2px solid violet;
+     width: fit-content;
+     background-color: blanchedalmond;
+     margin-top: 10px;
+}
+
+h3 {
+     color: brown;
+     text-decoration: underline;
+}
+
+.plct {
+     width: 120px;
+     height: 40px;
+     margin-top: 15px;
+
+}
+
+li {
+     color: green;
+}
+
+.plsel {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     /* border: 2px solid violet; */
+     background-image: url(https://coastalfasr569.weebly.com/uploads/1/2/5/8/125861542/303985947.jpg);
+     height: 45vw;
+     width: 95vw;
+     background-position: center;
+     background-size: cover;
+     color: blue;
+}
+
+.clch {
+     display: flex;
+     height: 10vw;
+     padding-left: 5vw;
+     width: 30vw;
+     /* background-color: red; */
+     flex-direction: column;
+     justify-content: center;
+     /* align-self: center; */
+}
+
+.icon {
+     font-size: 3vw;
+     display: flex;
+     justify-content: space-between;
+     padding: 0% 3vw;
+     align-items: center;
+}
+
+.icon #i1 {
+     color: red;
+}
+
+.icon #i2 {
+     color: green;
+}
+
+.icon #i3 {
+     color: blue;
+}
+
+.icon #i4 {
+     color: yellow;
+}
+
+.inp {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 0% 3.5vw;
+}
+
+.plse0,
+.plse1,
+.plse2,
+.plse3 {
+     cursor: pointer;
+     height: 1.5vw;
+     width: 1.5vw;
+}
+
+.clch h4 {
+     background-image: linear-gradient(rgb(51, 70, 177), rgb(14, 25, 86));
+     font-size: 2vw;
+     padding-left: 7vw;
+     color: #fff;
+}
+
+.plch {
+     padding-left: 5vw;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     /* align-self: center; */
+}
+
+.plch h4 {
+     width: 30vw;
+     padding: .5vw;
+     margin-bottom: 2vw;
+     font-size: 2vw;
+     background-image: linear-gradient(rgb(51, 70, 177), rgb(14, 25, 86));
+     color: #fff;
+}
+
+.plct {
+     cursor: pointer;
+     display: flex;
+     margin-left: 4vw;
+     align-items: center;
+     justify-content: center;
+     margin-bottom: 2vw;
+     height: 3vw;
+     width: 13vw;
+     /* color: #fff; */
+
+}
+
+.plchbtn {
+     cursor: pointer;
+     margin-top: 4vw;
+     width: 8vw;
+     height: 4vw;
+     align-self: center;
+     background-color: aliceblue;
+     border-radius: 30%;
+}
+
+.plchbtn:hover {
+     background-color: black;
+     color: #fff;
+}
