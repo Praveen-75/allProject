@@ -1,0 +1,212 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+body,
+html {
+     height: 100%;
+     width: 100%;
+}
+
+.main {
+     display: flex;
+     height: 100vh;
+     width: 100vw;
+     background: linear-gradient(180deg, #addfe2, #060707);
+}
+
+.left {
+     height: 100%;
+     width: 25vw;
+     /* background-color: #addfe2; */
+     border-right: .1vw solid black;
+}
+
+.trans {
+     height: 4vw;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 100%;
+     background-color: #fff;
+}
+
+.trans h1 {
+     font-size: 2vw;
+     color: darkmagenta;
+}
+
+.left h1 {
+     padding-left: 1vw;
+     padding-top: 1vw;
+     font-size: 1.5vw;
+     font-weight: 200;
+}
+
+.dash {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 1vw;
+     height: 3vw;
+     width: 70%;
+     background-color: #fff;
+     margin: 3vw;
+}
+.emp{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     padding: 2vw;
+     height: 40%;
+     width: 70%;
+     /* background-color: #fff; */
+     margin-left: 3vw;
+}
+.emp i{
+     font-size: 1.2vw;
+     color: darkmagenta;
+}
+.emp small{
+     font-size: 1.2vw;
+     padding-left: 1vw;
+     color: #060707;
+}
+
+.right {
+     height: 100%;
+     width: 75vw;
+     /* background-color: blue; */
+}
+
+.nav {
+     display: flex;
+     height: 4vw;
+     width: 100%;
+     border-bottom: .1vw solid black;
+}
+
+.rleft {
+     display: flex;
+     align-items: center;
+     margin-left: 2vw;
+     height: 3vw;
+     width: 35vw;
+     /* background-color: black; */
+}
+
+.rleft input {
+     height: 2vw;
+     font-size: 1.2vw;
+     width: 90%;
+}
+
+.rmid {
+     height: 5vw;
+     width: 30vw;
+}
+
+.rright {
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     height: 3vw;
+     width: 35vw;
+     /* background-color: rgb(61, 56, 56); */
+}
+
+.rright i {
+     font-size: 1.3vw;
+}
+
+.account {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 3vw;
+     width: 3vw;
+     /* background-color: red; */
+     border-radius: 50%;
+}
+
+.account i {
+     font-size: 3vw;
+     font-weight: 100;
+}
+
+#search {
+     margin-top: 2vw;
+     width: 95%;
+     padding: 0 2vw;
+     font-size: 1.5vw;
+     height: 4vw;
+     margin-left: 2vw;
+}
+
+.frm {
+     display: flex;
+     height: 70%;
+     margin-top: 2.5%;
+     width: 95%;
+     background-color: #fff;
+     margin-left: 2vw;
+}
+
+.fleft{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 100%;
+     width: 24%;
+     /* background-color: red; */
+}
+.fleft i{
+     font-size: 8vw;
+     font-weight: 100;
+}
+.fmid{
+     height: 100%;
+     width: 38%;
+     /* background-color: #addfe2; */
+}
+.fmid h3{
+     font-size: 1.4vw;
+     font-weight: 100;
+     padding-top: 4vw;
+}
+.fmid input {
+     border: none;
+     height: 2vw;
+     border-bottom: .12vw solid black;
+     width: 15vw;
+}
+.fright{
+     display: flex;
+     flex-direction: column;
+     height: 100%;
+     width: 38%;
+     /* background-color: aqua; */
+}
+.fright h3{
+     font-size: 1.4vw;
+     font-weight: 100;
+     padding-top: 4vw;
+}
+.fright input {
+     border: none;
+     height: 2vw;
+     border-bottom: .12vw solid black;
+     width: 15vw;
+}
+.fright button{
+     width: 13vw;
+     height: 3vw;
+     background-color: #060707;
+     margin-top: 2vw;
+     margin-left: 2vw;
+     font-size: 1.1vw;
+     font-weight: 100;
+     color: #fff;
+}

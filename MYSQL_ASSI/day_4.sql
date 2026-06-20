@@ -1,0 +1,10 @@
+#select country,count(*) from cm.customers group by country;
+#select customername, char_length(customername) from cm.customers;
+#select concat('abc','cde')se;
+#select upper(concat_ws(' ','helo','bhai'));
+#select trim('   abc  ');
+#select substr('hello bhai ',1,3);
+#select insert('hello',5,0,'bhai');
+#select replace('praveen kaha ho','e','i');
+#select reverse( replace('praveen kaha ho','e','i'));
+#select strcmp('abc','aBC');
