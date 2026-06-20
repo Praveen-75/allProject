@@ -1,0 +1,122 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gilroy";
+}
+html,body{
+  height: 100%;
+  width: 100%;
+}
+#main{
+  height: 100%;
+  width: 100%;
+  background-color:black;
+}
+#mid{
+  justify-content: space-between;
+  display: flex;
+  height: 100%;
+  width: 80%;
+  background-color: red;
+  margin-left: 10%;
+  background-image: url(Praveen1.jpeg);
+  background-size: cover;
+}
+h3{
+  position: absolute;
+  display: flex;
+ top: 61%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+ font-size: 45px;
+ color: rgb(194, 19, 19);
+}
+#nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  position: absolute;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.555);
+  height: 50px;
+  width: 80%;
+  font-weight: lighter;
+}
+#text{
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  height: 10%;
+  width: 40%;
+  background-color: rgba(0, 0, 0, 0.669);
+ color: rgb(232, 213, 217);
+ border: outset 2px rgb(77, 184, 141);
+}
+h1{
+  font-size: 40px;
+}
+#top{
+  margin-top: 13%;
+  justify-content: space-between;
+  display: flex;
+  position: absolute;
+  height: 35%;
+  width: 80%;
+}
+#top1{
+  display: flex;
+ justify-content: center;
+  height: 100%;
+  width: 25%;
+  background-color: #fff;
+  background-image: url(Sandeep.jpeg);
+  background-size: cover;
+  border-radius: 10%;
+}
+#bottom{
+  display: flex;
+ justify-content: center;
+  height: 100%;
+  width: 25%;
+  background-color: rgb(58, 54, 54);
+  background-image: url(Priya.jpeg);
+  background-size: cover;
+  border-radius: 100%;
+}
+#left{
+  display: flex;
+ justify-content: center;
+  margin-top: 40%;
+  height: 35%;
+  width: 25%;
+  background-color: #fff;
+  background-image: url(Nitesh.jpeg);
+  background-size: cover;
+  border-radius: 100%;
+}
+#right{
+  display: flex;
+ justify-content: center;
+  margin-top: 40%;
+  height: 35%;
+  width: 25%;
+  background-color: #fff;
+  background-image: url(Satyam.jpeg);
+  background-size: cover;
+  border-radius: 10%;
+}
+h2{
+  padding-top: 70%;
+  color: rgb(12, 4, 6);
+  font-size: 30px;
+}
+samp{
+  color: rgb(77, 184, 141);
+}

@@ -1,0 +1,87 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gilroy";
+}
+html,body{
+  height: 100%;
+  width: 100%;
+}
+#main{
+  height: 100%;
+  width: 100%;
+ /* background-color: red;*/
+ background-color: rgb(221, 210, 210);
+}
+#nav{
+  align-items: center;
+  padding-left: 10%;
+  padding-right: 55%;
+  justify-content: space-between;
+  display: flex;
+  height: 45px;
+  width: 100%;
+ /* background-color: black;
+  color: white;*/
+}
+#nleft{
+  position: absolute;
+  margin-left: 57%;
+  margin-top: 0;
+   height: 100%;
+   width: 40%;
+   background-color: #fff;
+   background-image: url(https://www.crictelegraph.com/wp-content/uploads/2022/02/virat-kohli-rcb-smile_202202767307.jpg);
+   background-position: center;
+  background-size: cover;
+  
+ }
+ h1{
+  font-size: 130px;
+  margin-left: 82%;
+  margin-top: 20%;
+  color: rgb(223, 125, 83);
+  transform: rotate(90deg);
+}
+@keyframes chacha{
+  from{
+    opacity: 0;
+    bottom:  0%;
+  }
+  to{
+    bottom: 5%;
+    opacity: 1;
+  }
+}
+
+ h6{
+   padding-top: 150%;
+   margin-right: 5%;
+   animation: chacha  9s cubic-bezier(0.19, 1, 0.22, 1) both;
+ }
+#right{
+  display: flex;
+  margin-left: 10%;
+  margin-top: 10%;
+  height: 60%;
+  width: 40%;
+  /*background-color: #fff;*/
+}
+#rleft{
+  height: 80%;
+  width: 40%;
+  background-color: black;
+  background-image: url(https://images.unsplash.com/photo-1611316185995-9624c94487d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGhkJTIwcGhvdG9zfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+  background-position: center;
+  background-size: cover;
+}
+#rright{
+  margin-left: 20%;
+  height: 80%;
+  width: 40%;
+  background-color: black;
+  background-image: url(https://images.unsplash.com/photo-1565367266304-dcb0415bec5e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGhkJTIwcGhvdG9zfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+  background-position: center;
+  background-size: cover;
+}

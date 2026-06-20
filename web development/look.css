@@ -1,0 +1,91 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: "Gilroy";
+}
+body,html{
+     height: 100%;
+     width: 100%;
+}
+#main{
+     position: relative;
+     display: flex;
+     height: 100%;
+     width: 100%;
+     /* background-color: red; */
+}
+#left{
+     position: relative;
+     height: 100%;
+     width: 50%;
+     background-color: rgb(255, 0, 0);
+}
+#left1{
+     height: 100%;
+     width: 100%;
+     background-color: blue;
+     background-image: url(https://images.unsplash.com/photo-1543326727-cf6c39e8f84c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+     background-position: center;
+     background-size: cover;
+}
+#tex{
+     position: absolute;
+     height: 200px;
+     width: 60%;
+     right: 5%;
+     bottom: 1%;
+     color: rgb(220, 32, 32);
+     font-size: 40px;
+}
+h2{
+     margin-left: 50%;
+     font-size: 65px;
+}
+#right{
+     position: relative;
+     height: 100%;
+     width: 50%;
+     background-color: rgb(235, 235, 243);
+}
+#top{
+     left: 25%;
+     position: absolute;
+     height: 30%;
+     width: 25%;
+     background-color: blueviolet;background-image: url(https://images.unsplash.com/photo-1622659097509-4d56de14539e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
+     background-position: center;
+     background-size: cover;
+}
+#mid{
+     margin-top: 35%;
+     margin-left: 10%;
+     height: 30%;
+     width: 25%;
+     background-color: rgb(92, 120, 109);
+     background-image: url(https://images.unsplash.com/photo-1524015368236-bbf6f72545b6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+     background-position: center;
+     background-size: cover;
+}
+#bottom{
+     position: absolute;
+     right: 10%;
+     bottom: 0;
+     height: 30%;
+     width: 25%;
+     background-color: rgb(161, 141, 180);
+     background-image: url(https://images.unsplash.com/photo-1628779238951-be2c9f2a59f4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
+     background-position: center;
+     background-size: cover;
+}
+#text{
+     top: 20%;
+     position: absolute;
+     right: -10%;
+     height: 45px;
+     width: 40%;
+     /* background-color: black; */
+     color: rgb(14, 15, 16);
+     transform: rotate(-90deg);
+     font-size: 20px;
+}

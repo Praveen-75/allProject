@@ -1,0 +1,96 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+}
+#main{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(226, 214, 214);
+}
+#right{
+  position: absolute;
+  height: 80%;
+  width: 80%;
+  background-color: white;
+ margin-top: 5%;
+ margin-left: 10%;
+}
+#left{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 100px;
+  padding-right: 580px;
+  padding-top: 25px;
+  cursor: pointer;
+}
+#said{
+  position: absolute;
+  top: 3%;
+  padding-left: 90%;
+  color: red;
+  font-size: 20px;
+}
+#nav{
+  margin-top: 5%;
+  margin-left: 5%;
+  height:320px;
+  width: 600px;
+  /* font-size: 20px; */
+  background-color: white;
+}
+h1{
+  font-size: 90px;
+}
+h3{
+  font-size: 40px;
+}
+#h4h{
+  font-size: 30px;
+}
+button{
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: rgb(228, 41, 41);
+  color: aliceblue;
+  cursor: pointer;
+}
+
+#image{
+  position: absolute;
+  margin-top: 201px;
+  margin-left: 55%;
+  height:420px;
+  width: 480px;
+  background-color: rgb(206, 151, 151);
+  background-image: url(Praveen1.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+#gmail{
+  padding-left: 30px;
+  padding-right: 30px;
+  justify-content: space-between;
+  display: flex;
+  margin-top: 20%;
+  height: 45px;
+  width: 550px;
+  background-color: white;
+}
+samp{
+  color: rgb(184, 70, 108);
+}
+#tum{
+  margin-left: 10px;
+  height: 70px;
+  width: 10px;
+  justify-content: space-between; 
+}

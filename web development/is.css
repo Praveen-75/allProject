@@ -1,0 +1,43 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+body,html{
+     height: 100%;
+     width: 100%;
+}
+#main{
+     
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     background-color: rgb(89, 0, 255);
+}
+.circle{
+     display: flex;
+     position: relative;
+     height: 30%;
+     width: 10%;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     /* transition: cubic-bezier(0.075, 0.82, 0.165, 1),2s; */
+     background-color: rgb(182, 168, 168);
+     /* border-radius: 100%; */
+     border: outset 2px black;
+}
+span{
+     padding-left: 90%;
+     color: #fff;
+}
+button{
+    margin-top: 25%;
+     padding: 5px 15px;
+     margin-left: 10%;
+     bottom: 5%;
+     left: 50%;
+}
+i{
+     font-size: 40px;
+}

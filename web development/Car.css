@@ -1,0 +1,74 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ }
+ html,body{
+  width: 100%;
+  height: 100%;
+ }
+ #main{
+   height: 100%;
+   width: 100%;
+   background-color: black;
+ }
+ #nav{
+   display: flex;
+   height: 50px;
+   width: 100%;
+   padding: 0 60px;
+   justify-content: space-between;
+   color: #fff;
+   align-items: center;
+   background-color: black;
+   /* background-color: #fff; */
+ }
+ #said{
+   position: absolute;
+   padding-top: 6px;
+   padding-left: 5px;
+ }
+ #nav #menu{
+width: 30px;
+height: 30px;
+margin-top: 15px;
+color: black;
+padding-top: 6px;
+text-align: center;
+background-color: #fff;
+border-radius: 50%;
+ }
+ #hero{
+   position: absolute;
+   height: 40%;
+   width: 35%;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50% ,-50%);
+   background-color: black;
+   background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD0P-80K_9Z6-_f-p3ZWkGTiqvjs2YUPFWQA&usqp=CAU);
+   background-size: cover;
+   background-position: center;
+ }
+ #hero h1{
+   position: absolute;
+   color: #fff;
+   left: -36%;
+   top: -18%;
+ }
+ img{
+   position: absolute;
+   padding-top: 10%;
+   left: -30%;
+   height: 70%;
+ }
+ #text{
+   position: absolute;
+   left: -10px;
+   padding-top: 20%;
+   color: #fff;
+ }
+ #text h2{
+   font-size: 39px;
+ }

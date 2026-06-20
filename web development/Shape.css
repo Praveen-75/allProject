@@ -1,0 +1,159 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Gilroy";
+}
+html,body{
+  height: 100%;
+  width: 100%;
+}
+#main{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+#nav{
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
+  position: absolute;
+  height: 15%;
+  color: #fff;
+  width: 70%;
+ /* background-color: #fff;*/
+  z-index: 99;
+  overflow: hidden;
+}
+#left{
+  height: 100%;
+  width: 70%;
+  background-color: red;
+  background-image: url(https://media.istockphoto.com/vectors/web-vector-id1213797817?k=20&m=1213797817&s=612x612&w=0&h=fFZHHcENsvCdQnJfQE55XwHV3bk8y8c4HFuDZUTT3AM=);
+  background-position: center;
+  background-size: cover;
+}
+#lt{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 20%;
+  width: 10%;
+  background-color: #fff;
+  background-image: url(https://media.istockphoto.com/photos/making-my-passion-my-pay-check-picture-id1185854439?k=20&m=1185854439&s=612x612&w=0&h=78uIMIcDrx42BWdvpPK5UPKxEwsmbuF7uF7bldfDuIs=);
+  background-position: center;
+  background-size: cover;
+  top: 45%;
+  margin-left: 60%;
+}
+#overflow{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+  width: 20%;
+  background-color: #fff;
+  border-radius: 100%;
+}
+#play{
+  font-size: 20px;
+}
+#lm{
+  position: absolute;
+  height: 30%;
+  width: 20%;
+  color: #fff;
+  /*background-color: #fff;*/
+  bottom: 19%;
+  left: 5%;
+}
+#text{
+  height: 40%;
+  width: 100%;
+ /* background-color: red;*/
+  font-size: 40px;
+}
+h1{
+  align-items: center;
+  margin-left: 7%;
+  color: blue;
+}
+#lmain{
+  display: flex;
+  height: 60%;
+  width: 100%;
+ /* background-color: blue;*/
+}
+h2{
+  margin-top: 18%;
+  font-size: 15px;
+}
+h6{
+  padding-top: 5%;
+}
+#lml{
+  height: 100%;
+  width: 45%;
+ /* background-color: rgb(214, 136, 136);*/
+}
+#lmr{
+  height: 100%;
+  width: 45%;
+ /* background-color: rgb(161, 97, 97);*/
+  margin-left: 10%;
+}
+#right{
+  position: relative;
+  height: 100%;
+  width: 30%;
+  background-color: rgb(202, 228, 208);
+}
+#rt{
+  height: 45%;
+  width: 70%;
+  background-color: yellow;
+  background-image: url(https://media.istockphoto.com/photos/scifi-scene-with-a-robot-3d-rendering-picture-id1197210096?k=20&m=1197210096&s=170667a&w=0&h=bV0ixSlTcsOkaICZYWfpV-lHI7m1R4Bxo1YGBwtNCoE=);
+  background-position: center;
+  background-size: cover;
+}
+#rm{
+  height: 20%;
+  width: 70%;
+  background-color: rgb(202, 228, 208);
+}
+h5{
+  padding-top: 10%;
+  padding-left: 15%;
+}
+h3{
+  font-size: 40px;
+  margin-left: 15%;
+}
+#rb{
+  height: 35%;
+  width: 100%;
+  background-color: rgb(15, 236, 163);
+  background-image: url(https://media.istockphoto.com/photos/jodrell-bank-radio-telescope-and-the-rising-moon-picture-id862291128?k=20&m=862291128&s=612x612&w=0&h=7HLKPkwSNIx_TnrDME2X9NHPCtB-QzvqdK7U1gbmqY8=);
+  background-position: center;
+  background-size: cover;
+}
+#rb1{
+  height: 100%;
+  width: 100%;
+  background-color: rgba(16, 20, 19, 0.107);
+}
+#vertical{
+  position: absolute;
+  display: flex;
+  transform: rotate(90deg);
+  margin-top: 50%;
+  margin-left: 50%;
+  justify-content: space-between;
+  color: rgb(30, 26, 26);
+  height: 5%;
+  width: 70%;
+} 
+

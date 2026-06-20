@@ -1,0 +1,474 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+html,body{
+     height: 100%;
+     width: 100%;
+}
+#open{
+     display: flex;
+     position: relative;
+     height: 100%;
+     width: 100%;
+     background-color: white;
+}
+#open h1, h2{
+     position: absolute;
+     bottom: 15%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     font-weight: 300;
+     font-size: 30px;
+     color: red;
+}
+#open h1{
+     color: black;
+     padding-bottom: 30px;
+}
+#open1{
+     display: flex;
+     position: absolute;
+     height: 100px;
+     width: 100px;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+}
+#open1 img{
+     height: 100px;
+     width: 100px;
+}
+#main{
+     position: relative;
+     height: 100%;
+     width: 100%;
+     background-color: rgb(255, 255, 255);
+}
+#stories{
+     display: none;
+     justify-content: space-between;
+     padding-right: 40%;
+     height: 100%;
+     width: 100%;
+     /* background-color: aqua; */
+}
+#insta{
+     display: flex;
+     justify-content: space-between;
+     position: absolute;
+     height: 7%;
+     width: 100%;
+     /* background-color: black; */
+}
+#left{
+     display: flex;
+     align-items: center;
+     font-family: 'Courier New', Courier, monospace;
+     height: 100%;
+     width: 15%;
+     /* background-color: #fff; */
+     padding: 0 25px;
+}
+#left i{
+     font-size: 30px;
+}
+#right{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 0 20px;
+     font-size: 30px;
+     height: 100%;
+     width: 10%;
+     /* background-color: #fff; */
+}
+#in{
+     position: absolute;
+     bottom: 0;
+     height: 7%;
+     width: 100%;
+     /* background-color: #fff; */
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     font-size: 30px;
+     padding: 0 55px;
+}
+i:hover{
+     cursor: pointer;
+}
+#story{
+     margin-top: 7%;
+     height: 200px;
+     width: 100px;
+     /* background-color: red; */
+}
+#chhoti{
+     height: 55px;
+     width: 55px;
+     border-radius: 50%;
+     /* background-color: yellow; */
+     border:  2px solid red;
+     overflow: hidden;
+}
+#chhoti img{
+     height: 55px;
+     width: 55px;
+}
+#overlay{
+     position: fixed;
+     height: 100%;
+     width: 100%;
+     margin-top: 10%;
+     background-color: rgba(0, 0, 0, 0.802);
+     display: none;
+     align-items: center;
+     justify-content: center;
+     z-index: 99;
+     overflow: hidden;
+}
+#overlay img{
+     height: 100%;
+     width: 100%;
+     /* background-color: red; */
+}
+#progres{
+     position: absolute;
+     height: 6px;
+     width: 90%;
+     top: 5px;  
+     background-color: gray;
+     border-radius: 50px; 
+     overflow: hidden;
+}
+#growth{
+     height: 6px;
+     width: 90%;
+     background-color: white;
+}
+#over{
+     position: absolute;
+     height: 70%;
+     width: 70%;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     /* background-color: rgb(230, 222, 222); */
+     background-color: white;
+     display: none;
+     border: outset 1px grey;
+     align-items: center;
+     justify-content: center;
+}
+#log{
+     display: flex;
+     justify-content: center;
+}
+#user,#pass{
+     padding: 8px 0;
+     padding-right: 50px;
+}
+#login{
+     padding: 8px 90px;
+     background-color: blue;
+     color: white;
+     border: none;
+}
+#over1{
+     display: none;
+     position: absolute;
+     height: 45%;
+     width: 100%;
+     margin-top: 50px;
+     background-color: red;
+     overflow: hidden;
+}
+#sear{
+     display: none;
+     align-items: center;
+     position: absolute;
+     height: 45px;
+     width: 100%;
+     background-color: rgb(235, 221, 221);
+     border-radius: 30px;
+}
+#sear, h3, i{
+     padding-left: 30px;
+     font-size: 30px;
+     font-weight: lighter;
+     font-family: "Gilroy";
+}
+#over2{
+     display: none;
+     position: absolute;
+     bottom: 7%;
+     height: 45%;
+     width: 100%;
+     background-color: rgb(42, 199, 110);
+     overflow: hidden;
+}
+#overleft{
+     height: 100%;
+     width: 25%;
+     background-color: aqua;
+     background-image: url(https://images.unsplash.com/photo-1541089404510-5c9a779841fc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+     background-size: cover;
+     background-position: center;
+}
+#overmid{
+     height: 100%;
+     width: 25%;
+     background-color: blue;
+     background-image: url(https://images.unsplash.com/photo-1532635241-17e820acc59f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1115&q=80);
+     background-size: cover;
+     background-position: center;
+}
+#overright{
+     height: 100%;
+     width: 25%;
+     background-color: black;
+     background-image: url(https://images.unsplash.com/photo-1548705085-101177834f47?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80);
+     background-size: cover;
+     background-position: center;
+}
+#oversaid{
+     height: 100%;
+     width: 25%;
+     background-color: rgb(173, 88, 88);
+     background-image: url(https://images.unsplash.com/photo-1528916451049-e5d097b61db2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
+     background-size: cover;
+     background-position: center;
+}
+
+
+#overleft1{
+     height: 100%;
+     width: 25%;
+     background-color: aqua;
+     background-image: url(https://images.unsplash.com/photo-1535268244390-8b989b92d2bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
+     background-size: cover;
+     background-position: center;
+}
+#overmid1{
+     height: 100%;
+     width: 25%;
+     background-color: blue;
+     background-image: url(https://images.unsplash.com/photo-1591035903277-22dbaf845677?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80);
+     background-size: cover;
+     background-position: center;
+}
+#overright1{
+     height: 100%;
+     width: 25%;
+     background-color: black;
+     background-image: url(https://images.unsplash.com/photo-1575561723050-3a69691d9700?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80);
+     background-size: cover;
+     background-position: center;
+}
+#oversaid1{
+     height: 100%;
+     width: 25%;
+     background-color: rgb(173, 88, 88);
+     background-image: url(Praveen.jpeg);
+     background-size: cover;
+     background-position: center;
+}
+#post{
+     display: none;
+     position: absolute;
+     right: 20px;
+     top: 60px;
+     height: 21%;
+     width: 150px;
+     background-color: whitesmoke;
+     border: solid 4px white;
+     border-radius: 5px;
+}
+#pleft{
+     height: 100%;
+     width: 50%;
+     /* background-color: rgb(238, 134, 134); */
+     overflow: hidden;
+}
+#pleft h4{
+     padding-left: 10px;
+     font-size: 20px;
+     font-weight: lighter;
+}
+#pright{
+     height: 100%;
+     width: 50%;
+     /* background-color: blue; */
+     overflow: hidden;
+}
+#pright i{
+     padding-left: 30px;
+     font-size: 20px;
+}
+#modal{
+     display: flex;
+     /* display: inline; */
+     white-space: nowrap;
+     overflow-x: auto;
+     overflow-y: hidden; 
+     position: absolute;
+     justify-content: space-between;
+     top: 30%;
+     height: 40%;
+     width: 100%;
+     background-color: gainsboro;  
+}
+#modal::-webkit-scrollbar{
+     display: none;
+}
+#modal1{
+     display: flex;
+     align-items: center;  
+     justify-content: center;
+     padding: 0 15px;
+     height: 100%;
+     width: 20%;
+     background-color: rgb(255, 255, 255);
+     border: solid 1px gray;
+}
+button{
+     padding: 5px 100px;
+     margin-top: 90%;
+     background-color: blue;
+     color: white;
+     border: none;
+     border-radius: 6px;
+}
+#modal2{
+     top: 20px;
+     position: absolute;
+     height: 50%;
+     width: 10%;
+     border-radius: 50%;
+     background-color: aqua;
+}
+#modal2 img{
+     border-radius: 50%;
+     height: 100%;
+     width: 100%;
+}
+#modal2 h4{
+     display: flex;
+     justify-content: center;
+}
+#modal2 h6{
+     display: flex;
+     justify-content: center;
+     font-weight: 200;
+     font-size: 13px;
+}
+ 
+#reel{
+     white-space: normal;
+     /* white-space: nowrap; */
+     overflow-x: hidden;
+     overflow-y: auto; 
+     position: absolute;
+     height: 94%;
+     width: 100%;
+     background-color: black;
+     display: none;
+     align-items: center;
+     justify-content: center;
+}
+#reel1{
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     height: 100%;
+     width: 40%;
+     background-color: black;
+}
+#reel::-webkit-scrollbar{
+     display: none;
+}
+#reel1 video{
+     height: 95%;
+     width: 100%;
+}
+#like{
+     position: absolute;
+     height: 35%;
+     width: 40px;
+     right: 3%;
+     bottom: 5%;
+     color: aliceblue;
+}
+#like i{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 15px 0;
+}
+#like1{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 0 3%;
+     height: 50px;
+     width: 100%;
+     color: aliceblue;
+}
+
+#chat{
+     white-space: normal;
+     /* white-space: nowrap; */
+     overflow-x: hidden;
+     overflow-y: auto; 
+     padding: 0 35%;
+     position: absolute;
+     display: none;
+     height: 100%;
+     width: 100%;
+     background-color: white;
+}
+#chat::-webkit-scrollbar{
+     display: none;
+}
+#chat1{  
+     align-items: center;
+     /* justify-content: center; */
+     position: relative;
+     display: flex;
+     height: 9%;
+     width: 100%;
+     /* background-color: rgb(250, 242, 242); */
+}
+#chat12{
+     margin: 0 5px;
+     height: 50px;
+     width: 50px;
+     border-radius: 50%;
+     /* background-color: #fff; */
+}
+#chat12 img{
+     height: 100%;
+     width: 100%;
+     border-radius: 50%;
+}
+#chatmid{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 100%;
+     width: 63.3333%;
+     /* background-color: black; */
+}
+#chatright{
+     position: absolute;
+     right: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100%;
+     width: 25.3333%;
+     /* background-color: rgb(191, 53, 53); */
+}

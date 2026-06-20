@@ -1,0 +1,45 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+html,body{
+     height: 100%;
+     width: 100%;
+}
+#main{
+     position: relative;
+     min-height: 100vh;
+     width: 100%;
+     background-color: rgba(126, 122, 122, 0.475);
+}
+.nav{
+     height: 4vw;
+     width: 100vw;
+     background-color: black;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 0 5vw;
+     color: #fff;
+     font-size: 1vw;
+}
+.nav h3{
+     font-weight: 100;
+}
+.nav h3:hover , .nav i:hover{
+     cursor: pointer;
+     border-bottom: .2vw solid blue;
+}
+.top{
+     pointer-events: none;
+     position: absolute;
+     top: 53%;
+     left: 50%;
+     transform: translate(-50% , -50%);
+     height: 40vw;
+     width: 90vw;
+     background-image: url(https://hgpi.in/wp-content/uploads/2022/07/DJI_0033-scaled-p1ps5lt31c7emoaj84pwpl6owcxl3xo030bv21axl4.jpg);
+     background-position: center;
+     background-size: cover;
+}

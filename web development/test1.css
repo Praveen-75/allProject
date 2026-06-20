@@ -1,0 +1,163 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+body , html{
+     height: 100%;
+     width: 100%;
+}
+#main{
+     position: relative;
+     display: flex;
+     height: 100%;
+     width: 100%;
+}
+#point{
+     position: absolute;
+     left: 50%;
+     top: 10%;
+     height: 75%;
+     width: 40%;
+     /* background-color: red; */
+     background-image: url(i4-removebg-preview.png);
+     background-position: center;
+     background-size: cover;
+}
+#left{
+     position: relative;
+     height: 100%;
+     width: 70%;
+     /* background-color: aqua; */
+}
+#nav{
+     padding: 0 3%;
+     align-items: center;
+     justify-content: space-between;
+     display: flex;
+     height: 80px;
+     width: 80%;
+     background-color: #fff;
+     color: rgb(171, 164, 164);
+     font-size: 20px;
+}
+#nnav{
+     background-image: url(https://www1.djicdn.com/dps/de46652dd99c67d4f8d17607e3bf0dce.jpg);
+     background-size: cover;
+     background-position: center;
+     height: 60px;
+     width: 60px;
+     background-color: red;
+}
+#pro{
+     color: black;
+     font-weight: 900;
+}
+#mid{
+     position: absolute;
+     top: 20%;
+     left: 3%;
+     height: 50%;
+     width: 70%;
+     /* background-color: rgb(169, 82, 82); */
+}
+#mid1{
+     height: 50%;
+     width: 60%;
+}
+#mid1 h1{
+     margin-top: 5%;
+     font-size: 120px;
+}
+#mid1 p{
+     margin-top: 20px;
+     font-size: 40px;
+}
+button{
+     margin-top: 30px;
+     padding: 13px 30px;
+     background-color: transparent;
+     font-size: 20px;
+     border: solid 2px grey;
+}
+#nav2{
+     padding: 0 3%;
+     justify-content: space-between;
+     display: flex;
+     position: absolute;
+     bottom: 0;
+     height: 15%;
+     width: 100%;
+     background-color: #fff;
+}
+.circle{
+     height: 100%;
+     width: 15%;
+     /* border-right: 2px solid gray ; */
+     /* background-color: red; */
+}
+.circle h3{
+     color: gray;
+     padding-top: 10px;
+}
+#nav4{
+     justify-content: space-between;
+     display: flex;
+     align-items: center;
+     height: 100%;
+     width: 30%;
+}
+#gola{
+     background-image: url(https://www.techadvisor.com/wp-content/uploads/2022/06/dji-phantom-4-pro-obsidian-release-date-price-specifications.jpg?quality=50&strip=all&w=1008);
+     background-position: center;
+     background-size: cover;
+     height: 65px;
+     width: 65px;
+     border-radius: 50%;
+     border: solid 1px rgb(173, 125, 125);
+}
+#nav4 i{
+     font-size: 30px;
+     color: gray;
+}
+#gola1{
+     background-image: url(https://www.dronenerds.com/media/product/a5a/dji-phantom-4-pro-remote-controller-with-5-5-hd-display-cp-pt-000604-561.jpg);
+     background-position: center;
+     background-size: cover;
+     height: 60px;
+     width: 60px;
+     border-radius: 50%;
+     border: solid 1px rgb(173, 125, 125);
+}
+#right{
+     position: relative;
+     height: 100%;
+     width: 30%;
+     background-color: grey;
+}
+#nav1{
+     height: 80px;
+     width: 100%;
+     /* background-color: #fff; */
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding-left: 70%;
+     padding-right: 10%;
+}
+#nav1, #nav3 i{
+     font-size: 25px;
+}
+#nav3{
+     color: #fff;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 0 30%;
+     position: absolute;
+     bottom: 0;
+     height: 100px;
+     width: 100%;
+     background-color: rgb(96, 94, 94);
+}
+
